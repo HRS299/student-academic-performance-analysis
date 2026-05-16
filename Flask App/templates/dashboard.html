@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <h1>{{ role }} Dashboard</h1>
+
+    <h2>Welcome {{ username }}</h2>
+
+    <p>
+        This is the {{ role }} dashboard page.
+    </p>
+
+</div>
+
+</body>
+</html>

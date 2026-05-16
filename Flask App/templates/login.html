@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="login-container">
+
+    <h1>Student Academic Performance Analysis System</h1>
+
+    <h2>Login</h2>
+
+    <form method="POST">
+
+        <label>Username</label>
+        <input type="text" name="username">
+
+        <label>Password</label>
+        <input type="password" name="password">
+
+        <button type="submit">Login</button>
+
+    </form>
+
+    <div class="demo-users">
+
+        <p><b>Admin:</b> admin / admin123</p>
+
+        <p><b>Faculty:</b> faculty / faculty123</p>
+
+        <p><b>Coordinator:</b> coordinator / coord123</p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

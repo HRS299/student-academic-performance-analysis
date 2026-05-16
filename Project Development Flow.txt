@@ -1,0 +1,11 @@
+
+
+1. Created csv sample file
+
+2. Install pandas
+
+3. Created database - "student_performance" and table - "student"
+
+4. Install sqlalchemy pymysql
+
+5. Run data upload script.
