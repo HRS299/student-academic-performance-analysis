@@ -9,7 +9,7 @@ fake = Faker()
 
 # MySQL connection
 username = "root"
-password = quote_plus("hR$@X5882@")
+password = quote_plus("YOUR_PASSWORD")
 
 engine = create_engine(
     f"mysql+pymysql://{username}:{password}@localhost/student_performance"

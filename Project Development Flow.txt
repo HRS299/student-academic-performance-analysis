@@ -9,3 +9,8 @@
 4. Install sqlalchemy pymysql
 
 5. Run data upload script.
+
+6. Downloaded MySQl BI connector
+
+7. In Power BI, connect to MySQL Database
+

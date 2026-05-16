@@ -7,7 +7,7 @@ df = pd.read_csv("data/Student_Data.csv")
 
 # MySQL connection
 username = "root"
-password = quote_plus("hR$@X5882@")
+password = quote_plus("Hrs5882@")
 
 engine = create_engine(
     f"mysql+pymysql://{username}:{password}@localhost/student_performance"
