@@ -4,6 +4,8 @@ from flask import Flask, render_template, request, redirect, url_for, jsonify
 
 from db_config import get_connection
 
+
+
 app = Flask(__name__)
 
 
@@ -22,34 +24,46 @@ def login():
         if username == 'admin' and password == 'admin123':
 
             return redirect(
-                url_for(
-                    'dashboard',
-                    role='Admin',
-                    username=username
-                )
+                "https://app.powerbi.com/groups/me/reports/36385c50-d094-47f3-92e9-8333625279bb/ce8c2e2bb050c0662c36?experience=power-bi"
             )
+
+            # return redirect(
+            #     url_for(
+            #         'dashboard',
+            #         role='Admin',
+            #         username=username
+            #     )
+            # )
 
         # FACULTY
         elif username == 'faculty' and password == 'faculty123':
 
             return redirect(
-                url_for(
-                    'dashboard',
-                    role='Faculty',
-                    username=username
-                )
+                "https://app.powerbi.com/groups/me/reports/36385c50-d094-47f3-92e9-8333625279bb/8c8da43dea52739509ad?experience=power-bi"
             )
+
+            # return redirect(
+            #     url_for(
+            #         'dashboard',
+            #         role='Admin',
+            #         username=username
+            #     )
+            # )
 
         # COORDINATOR
         elif username == 'coordinator' and password == 'coord123':
 
             return redirect(
-                url_for(
-                    'dashboard',
-                    role='Coordinator',
-                    username=username
-                )
+                "https://app.powerbi.com/groups/me/reports/36385c50-d094-47f3-92e9-8333625279bb/c9e657312298414e3119?experience=power-bi"
             )
+
+            # return redirect(
+            #     url_for(
+            #         'dashboard',
+            #         role='Admin',
+            #         username=username
+            #     )
+            # )
 
         else:
             return "Invalid Credentials"
